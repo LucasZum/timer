@@ -1,8 +1,7 @@
 // Defina as datas importantes no formato ISO (ano-mês-dia)
 const dates = {
-    '2024-06-11': {
-        message: 'Feliz Dia dos Namorados!',
-        password: 'amor'
+    '2024-06-12': {
+        password: 'CX2TU37B'
     }
     // Adicione outras datas importantes aqui
 };
@@ -63,7 +62,7 @@ if (targetDate) {
 const checkPassword = () => {
     const inputPassword = document.getElementById('password').value;
     console.log(dates);
-    if (inputPassword === dates['2024-06-11'].password) {
+    if (inputPassword === dates['2024-06-12'].password) {
         // Ocultar tudo exceto a mensagem
         contador_section.style.display = 'none'
         proxima.classList.add('hidden')

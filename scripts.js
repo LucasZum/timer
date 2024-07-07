@@ -1,7 +1,10 @@
 // Defina as datas importantes no formato ISO (ano-mês-dia)
+// tem que mudar apenas essa duas datas
+
+data = "2024-07-07"
 const dates = {
-    '2024-06-12': {
-        password: 'CX2TU37B'
+    '2024-07-07': {
+        password: 'pequenininha'
     }
     // Adicione outras datas importantes aqui
 };
@@ -56,16 +59,16 @@ if (targetDate) {
     updateCountdown();
 } else {
     countdownElement.style.display = 'none';
+    proxima.style.display = "none"
     passwordSection.style.display = 'block';
 }
 
 const checkPassword = () => {
     const inputPassword = document.getElementById('password').value;
     console.log(dates);
-    if (inputPassword === dates['2024-06-12'].password) {
+    if (inputPassword === dates[data].password) {
         // Ocultar tudo exceto a mensagem
         contador_section.style.display = 'none'
-        proxima.classList.add('hidden')
         contentElement.classList.remove('hidden')
         contentElement.style.display = 'block';
     } else {
@@ -76,7 +79,6 @@ const checkPassword = () => {
 
 const render_cronometro = () => {
     contentElement.style.display = 'none'
-    proxima.style.display = 'flex'
-    proxima.classList.remove('hidden')
+    proxima.style.display = "block"
 
 }
